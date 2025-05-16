@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    /* Remove as margens padrão do navegador para evitar espaços indesejados */
+    padding: 0;
+    /* Remove os preenchimentos internos padrão */
+    height: 100%;
+    /* Faz com que o HTML e o corpo da página ocupem toda a altura da tela */
+    color: #ffffff;
+    /* Define a cor do texto como branco, garantindo boa visibilidade sobre fundos
+    escuros */
+    font-family: Arial, sans-serif;
+    /* Define a fonte principal do site como Arial e, caso não esteja disponível,
+    utiliza uma fonte genérica sem serifa */
+    }
+    body {
+    background: url('./img/background.jpg') no-repeat center center fixed;
+    /* Define uma imagem de fundo:
+    - 'url()' → Caminho da imagem de fundo.
+    - 'no-repeat' → Evita a repetição da imagem.
+    - 'center center' → Centraliza a imagem no meio da tela.
+    - 'fixed' → Faz com que a imagem de fundo fique fixa enquanto o usuário
+    rola a página. */
+    background-size: cover;
+    /* Faz com que a imagem de fundo cubra toda a área do body, mantendo a
+    proporção e preenchendo a tela */
+    
+    /* Container principal dividido em duas colunas */
+    .container {
+    display: flex;
+    /* Usa Flexbox para organizar os elementos em linha (sidebar + conteúdo) */
+    height: 100%;
+    /* Garante que o container ocupe toda a altura da tela */
+    }
+    /* Sidebar com fundo cinza semitransparente */
+    .sidebar {
+    background: rgb(0, 0, 0);
+    /* Define um fundo cinza com transparência (70%) para manter a visibilidade do
+    fundo */
+    padding: 20px;
+    /* Adiciona espaçamento interno para afastar o conteúdo das bordas */
+    box-sizing: border-box;
+    /* Faz com que padding e bordas não aumentem o tamanho total da sidebar */
+    display: flex;
+    /* Ativa o Flexbox para organizar os elementos internos verticalmente */
+    flex-basis: 20%;
+    /* Define que a sidebar ocupará 20% da largura do container flexível */
+    flex-direction: column;
+    /* Organiza os elementos dentro da sidebar em uma coluna (um abaixo do outro)
+    */
+    }
+    
+    /* Estilização da logo */
+    .logo img {
+    display: block;
+    /* Faz com que a imagem seja tratada como um bloco, permitindo manipulações de
+    margens */
+    margin-left: auto;
+    margin-right: auto;
+    /* Define margens automáticas laterais, centralizando a imagem horizontalmente
+    */
+    max-width: 60%;
+    /* Limita a largura da logo a no máximo 60% do contêiner pai, evitando que
+    fique muito grande */
+    height: auto;
+    /* Mantém a proporção da imagem ao redimensionar */
+    margin-bottom: 20px;
+    /* Adiciona um espaçamento inferior para separar a logo do menu */
+    }
+    /* Estilização do menu */
+    .menu ul {
+    list-style: none;
+    /* Remove os marcadores padrão da lista (bolinhas) */
+    padding: 0;
+    margin: 0;
+    /* Remove os espaçamentos padrão da lista */
+    }
+    .menu ul li {
+    margin-bottom: 10px;
+    /* Adiciona espaçamento entre os itens do menu */
+    }
+    /* Estilização dos links do menu */
+    .menu ul li a {
+    display: block;
+    /* Faz com que cada link ocupe toda a largura do contêiner pai */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+    color: #000000;
+    /* Define a cor do texto como branca */
+    padding: 10px 15px;
+    /* Adiciona espaçamento interno para tornar os botões maiores e mais fáceis de
+    clicar */
+    border-radius: 4px;
+    /* Arredonda os cantos dos botões para um visual mais moderno */
+    text-align: center;
+    /* Centraliza o texto dentro dos botões */
+    font-weight: bold;
+    /* Deixa o texto dos botões em negrito */
+    transition: opacity 0.3s;
+    /* Cria um efeito suave ao passar o mouse sobre os botões */
+    }
+    /* Definição de cores individuais para cada botão do menu */
+    .menu ul li:nth-child(1) a {
+    background-color: #f7f7f7;
+    /* Cor laranja para o primeiro botão */
+    }
+    .menu ul li:nth-child(2) a {
+    background-color: #f7f7f7;
+    /* Cor verde musgo para o segundo botão */
+    }
+    .menu ul li:nth-child(3) a {
+    background-color: #f7f7f7;;
+    /* Cor marrom para o terceiro botão */
+    }
+    .menu ul li:nth-child(4) a {
+    background-color: #f7f7f7;;
+    /* Cor amarelo escuro para o quarto botão */
+    }
+    .menu ul li:nth-child(5) a {
+    background-color: #f7f7f7;
+    /* Cor verde-azulado para o quinto botão */
+    }
+    .menu ul li:nth-child(6) a {
+   background-color: #f7f7f7;
+/* Cor verde-azulado para o quinto botão */
+    }
+    /* Efeito ao passar o mouse sobre os botões do menu */
+    .menu ul li a:hover {
+    opacity: 0.8;
+    /* Reduz a opacidade para 80%, criando um efeito visual ao passar o mouse */
+    }
+    
+    /* Área de conteúdo: boxes empilhados verticalmente */
+    .content {
+    padding: 20px;
+    /* Adiciona um espaçamento interno de 20px para afastar o conteúdo das bordas
+    */
+    display: flex;
+    /* Ativa o Flexbox para organizar os elementos de forma flexível */
+    flex-basis: 100%;
+    /* Define que a área de conteúdo ocupa 100% da largura disponível dentro do
+    container */
+    flex-direction: column;
+    /* Organiza os elementos (boxes) em coluna, um abaixo do outro */
+    gap: 20px;
+    /* Define um espaçamento de 20px entre os elementos filhos (as caixas de
+    conteúdo) */
+    overflow-y: auto;
+    /* Ativa a rolagem vertical caso o conteúdo ultrapasse a altura da tela */
+    box-sizing: border-box;
+    /* Faz com que padding e bordas não aumentem o tamanho total do elemento */
+    }
+    /* Boxes com fundo preto semitransparente e cantos arredondados */
+    .box {
+    background: rgb(0, 0, 0);
+    /* Define um fundo preto com 70% de transparência para os boxes */
+    padding: 20px;
+    /* Adiciona um espaçamento interno para afastar o conteúdo das bordas */
+    border-radius: 5px;
+    /* Arredonda os cantos dos boxes para um visual mais suave */
+    }
+    /* Títulos das seções com destaque em amarelo escuro */
+    .box h2 {
+    color: #ffffff;
+    /* Define a cor do título como amarelo escuro */
+    margin-top: 0;
+    /* Remove a margem superior padrão para melhor alinhamento */
+    }
