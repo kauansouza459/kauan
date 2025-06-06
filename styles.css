@@ -40,12 +40,11 @@ html, body {
     /* Adiciona espaçamento interno para afastar o conteúdo das bordas */
     box-sizing: border-box;
     /* Faz com que padding e bordas não aumentem o tamanho total da sidebar */
-    display: flex;
-    /* Ativa o Flexbox para organizar os elementos internos verticalmente */
-    flex-basis: 20%;
-    /* Define que a sidebar ocupará 20% da largura do container flexível */
-    flex-direction: column;
-    /* Organiza os elementos dentro da sidebar em uma coluna (um abaixo do outro)
+    .menu ul li:nth-child(2) a {
+        background-color: #f7f7f7;
+        /* Cor verde musgo para o segundo botão */
+        }
+        .menu ul li:nth-child(3) a {
     */
     }
     
@@ -160,8 +159,4 @@ html, body {
     }
     /* Títulos das seções com destaque em amarelo escuro */
     .box h2 {
-    color: #ffffff;
-    /* Define a cor do título como amarelo escuro */
-    margin-top: 0;
-    /* Remove a margem superior padrão para melhor alinhamento */
-    }
+    color: #ffffff;}
